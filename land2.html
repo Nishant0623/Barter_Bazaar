@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="land2.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="barterBazzar.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <form action="index.html" method="post">
+      
+        <h1>Register Your Business<hr></h1>
+        <fieldset>
+          <label for="name">Business:</label>
+          <input type="text" id="" name="user_business">
+
+          <label for="job">Category:</label>
+          <select id="job" name="user_job">
+            <option value="">Select Category</option>
+            <option value="">Electrician</option>
+            <option value="">Plumber</option>
+            <option value="">Shopper</option>
+            <option value="">Vegetable Seller</option>
+          </select>
+
+          <label for="bio">Description:</label>
+          <textarea id="description" name="user_descrition"></textarea>          
+        </fieldset>
+        <button type="submit">Register</button>
+      </form>
+</body>
+</html>

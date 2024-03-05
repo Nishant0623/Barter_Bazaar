@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="barterBazzar.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-1">S.No</div>
+            <div class="col col-2">Business Name</div>
+            <div class="col col-3">Category</div>
+            <div class="col col-4">Description</div>
+            <div class="col col-5">Update</div>
+            <div class="col col-6">Delete</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="S.No">1</div>
+            <div class="col col-2" data-label="Business Name">XYZ</div>
+            <div class="col col-3" data-label="Category">Seller</div>
+            <div class="col col-4" data-label="Description">Sabji lelo</div>
+            <div class="col col-5" data-label="Update"><button>Update</button></div>
+            <div class="col col-6" data-label="Delete"><button>Delete</button></div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="S.No">2</div>
+            <div class="col col-2" data-label="Business Name">ABC</div>
+            <div class="col col-3" data-label="Category">Electrician</div>
+            <div class="col col-4" data-label="Description">Light Shi kr do</div>
+            <div class="col col-5" data-label="Update"><button>Update</button></div>
+            <div class="col col-6" data-label="Delete"><button>Delete</button></div>
+          </li>
+      </div>
+</body>
+</html>
