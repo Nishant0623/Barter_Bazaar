@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="add_product.css">
+</head>
+<body>
+    <section id="header">
+        <h1 class="logo">TradeBargain</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="#">ANALYTICS</a></li>
+                <li><a href="#">CATEGORY</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">ORDERS</a></li>
+                <li><a href="#">POST COUPON</a></li>
+                <li><a href="#">COUPONS</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+        </div>
+    </section>  
+    
+    <form action="index.html" method="post">
+      
+        <h1>Add Product</h1>
+        
+        <fieldset>
+            <input type="file" id="uploadbtn">
+            <label for="uploadbtn">Select file</label>
+          <select id="job" name="user_job">
+            <option value="">Select Category</option>
+            <option value="">Electrician</option>
+            <option value="">Plumber</option>
+            <option value="">Shopper</option>
+            <option value="">Vegetable Seller</option>
+          </select>
+
+          <input type="text" id="" placeholder="Name" name="user_name">
+
+          <input type="text" id="" placeholder="Price" name="user_price">
+
+          <textarea id="description" placeholder="Description" name="user_descrition"></textarea>   
+          
+          <button type="submit">Add Product</button>
+        </fieldset>
+      </form>
+
+</body>
+</html>
