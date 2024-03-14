@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#header
+{
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.logo
+{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li
+{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a
+{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.3s ease;
+    color: white;
+}
+.section-p1
+{
+    padding: 40px 80px;
+}  
+#product1 .pro-container
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  flex-wrap: wrap
+}
+  
+#product1 .pro
+{
+    width: 45%;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+  
+#product .pro:hover
+{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro .image
+{
+    display: flex;
+    align-items: center;
+}
+#product1 .pro .name
+{
+    margin-left: 30px;
+    font-size: 20px;
+    display: flex;
+    font-weight: bold;
+}
+#product1 .pro .name .test
+{
+    color: rgb(22, 88, 126);
+}
+#product1 .pro .name .rate
+{
+    margin-left: 20px;
+}
+#product1 .pro .name .minus img
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+#product1 .pro .name .plus img
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+#product1 .pro img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+  
+#product1 .pro .des
+{
+    padding: 10px 0;
+}
+  
+#product1 .pro .des p
+{
+    color: #dc0c2b;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: end;
+}
+#button
+{
+    background-color: #cac7ff;
+    color: #1a1a1a;
+    font-size: 17px;
+    font-weight: bold;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+}

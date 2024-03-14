@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Review</title>
+    <link rel="stylesheet" href="Post_review.css">
+</head>
+<body>
+    <section id="header">
+        <h1 class="logo">TradeBargain</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">ORDERS</a></li>
+                <li><a href="#">WISHLIST</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <form action="index.html" method="post">
+
+        <fieldset>
+            <input type="file" id="uploadbtn">
+            <label for="uploadbtn">Select file</label>
+            <select id="job" name="user_job">
+                <option value="">Rating</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+            
+            <textarea id="description" placeholder="Description" name="user_descrition"></textarea>   
+            
+            <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <link rel="stylesheet" href="Order_status.css">
+</head>
+<body>
+    <section id="header">
+        <h1 class="logo">TradeBargain</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="#">ANALYTICS</a></li>
+                <li><a href="#">CATEGORY</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">ORDERS</a></li>
+                <li><a href="#">POST COUPON</a></li>
+                <li><a href="#">COUPONS</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-1">S.No</div>
+            <div class="col col-2">Tracking ID</div>
+            <div class="col col-2">User Name</div>
+            <div class="col col-3">Amount</div>
+            <div class="col col-4">Description</div>
+            <div class="col col-5">Address</div>
+            <div class="col col-5">Date</div>
+            <div class="col col-5">Status</div>
+            <div class="col col-6">Action</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="S.No">1</div>
+            <div class="col col-2" data-label="Business Name">XYZ123</div>
+            <div class="col col-2" data-label="Business Name">Nishant</div>
+            <div class="col col-3" data-label="Category">$ 100.00</div>
+            <div class="col col-4" data-label="Description">Sabji lelo</div>
+            <div class="col col-5" data-label="Address">Indore</div>
+            <div class="col col-6" data-label="Date"><input type="date" id="date" name="date"></div><!--Can change the format of date-->
+            <div class="col col-6" data-label="Status">Delivered</div>
+            <div class="col col-6" data-label="Action">
+                <select onchange="updateStatus(this)">
+                <option value="">Action</option>
+                <option value="Delivered">Delivered</option>
+                <option value="Shipped">Shipped</option></select>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <script>
+        function updateStatus(select) {
+            var selectedOption = select.options[select.selectedIndex].value;
+            var statusColumn = select.parentElement.previousElementSibling; // Get the status column
+            statusColumn.textContent = selectedOption; // Update status column with selected value
+        }
+        </script>
+</body>
+</html>

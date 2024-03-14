@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cart</title>
+    <link rel="stylesheet" href="view_cart.css">
+</head>
+<body>
+    <section id="header">
+        <h1 class="logo">TradeBargain</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">ORDERS</a></li>
+                <li><a href="#">WISHLIST</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro">
+                <div class="image">
+                    <div class="image1">
+                        <img src="plumber.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <p class="test">test name</p>
+                        <p class="rate">$ 100.00</p>
+                        <p class="minus"><img src="minus.svg"></p>
+                        <p class="inc">1</p>
+                        <p class="plus"><img src="plus.svg"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="des">
+                  <p>Amount : $ 100.00</p>
+                  <p>Total Amount : $ 100.00</p>
+                </div>
+                <br>
+                <div>
+                  <a href=""><button id="button">Place Order</button></a>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const minusButton = document.querySelector('.minus');
+            const plusButton = document.querySelector('.plus');
+            const incElement = document.querySelector('.inc');
+
+            // Function to handle decrementing the number
+            minusButton.addEventListener('click', function () {
+                let currentValue = parseInt(incElement.textContent);
+                if (currentValue > 0) {
+                    incElement.textContent = currentValue - 1;
+                }
+            });
+
+            // Function to handle incrementing the number
+            plusButton.addEventListener('click', function () {
+                let currentValue = parseInt(incElement.textContent);
+                incElement.textContent = currentValue + 1;
+            });
+        });
+    </script>
+</body>
+</html>
